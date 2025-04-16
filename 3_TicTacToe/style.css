@@ -1,0 +1,85 @@
+body{
+    background-image: linear-gradient(to left top, #190222, #1d0d31, #211341, #221b52, #1e2365, #212774, #242c83, #273092, #3e2e9f, #5529aa, #6d1eb3, #8600ba);
+    height: 713px;;
+}
+
+.cell{
+    width: 75px;
+    height: 75px;
+    border: 2px solid black;
+    box-shadow: 0 0 0 2px;
+    line-height: 75px;
+    font-size: 50px;
+    color: #10004e;
+    background: rgba(148, 193, 216, 0.45);
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 7.5px );
+    -webkit-backdrop-filter: blur( 7.5px );
+    border-radius: 10px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.cell:hover{
+    background-color: #7d9af6;
+}
+
+#cellContainer{
+    display: grid;
+    grid-template-columns: repeat(3,auto);
+    grid-template-rows: repeat(3,auto);
+    height: 240px;
+    width: 240px;
+    margin: auto; 
+    padding-top: 20px;
+    cursor: pointer;
+}
+
+button{
+    padding: 7px 13px;
+    margin-top: 20px;
+    border-radius: 5px;
+    font-size: 18px;
+    font-weight: bolder;
+    font-family: 'Times New Roman', Times, serif;
+    border: #190222;
+    margin-bottom: 70px;
+}
+
+button:hover{
+    border: 2px solid white;
+    background-color: #000f44;
+    color: white;
+    font-size: 21px;
+    padding: 8px 14px;
+    font-weight: 300;
+}
+
+#gameContainer{
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+    padding-top: 50px;
+}
+
+h1{
+    color: #ffffff;
+    padding: 15px 20px;
+    font-family: palatina;
+    border: 2px solid white;
+    background-color: #211341; 
+}
+
+h1 span{
+    color: #943fde;
+}
+
+h2{
+    color: rgb(117, 177, 255);
+    padding-top: 40px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-style: italic;
+}
+
+.winner{
+    background-color: white;
+}

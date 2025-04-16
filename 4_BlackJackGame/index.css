@@ -1,0 +1,90 @@
+/* Ensures the page covers the full screen */
+body {
+    text-align: center;
+    background-image: url(Cards.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover; /* Ensures full coverage */
+    background-attachment: fixed; /* Keeps background fixed while scrolling */
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Centers content vertically */
+    align-items: center; /* Centers content horizontally */
+    font-family: Arial, sans-serif;
+    color: white;
+}
+
+/* Default styles */
+h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+p {
+    font-size: 1.5rem;
+    margin: 10px 0;
+}
+
+button {
+    font-size: 1.2rem;
+    padding: 10px 20px;
+    margin: 10px;
+    background-color: #0c3c26;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0a3220;
+}
+
+/* Laptops (max-width: 1200px) */
+@media (max-width: 1200px) {
+    h1 {
+        font-size: 2.5rem;
+    }
+    
+    p {
+        font-size: 1.3rem;
+    }
+
+    button {
+        font-size: 1.1rem;
+    }
+}
+
+/* Tablets (max-width: 900px) */
+@media (max-width: 900px) {
+    h1 {
+        font-size: 2rem;
+    }
+    
+    p {
+        font-size: 1.2rem;
+    }
+
+    button {
+        font-size: 1rem;
+        padding: 8px 16px;
+    }
+}
+
+/* Mobile devices (max-width: 600px) */
+@media (max-width: 600px) {
+    h1 {
+        font-size: 1.8rem;
+    }
+    
+    p {
+        font-size: 1rem;
+    }
+
+    button {
+        font-size: 0.9rem;
+        padding: 6px 12px;
+    }
+}

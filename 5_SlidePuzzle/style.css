@@ -1,0 +1,27 @@
+body{
+    font-family: 'Times New Roman', Times, serif;
+    text-align: center;
+    color: #0c67ae;
+    background-size: cover;
+}
+
+#title{
+    height: 180px;
+    width: 300px;
+}
+
+#board{
+    width: 365px;
+    height: 365px;
+    margin: 0 auto;
+    background-color: lightblue;
+    border: 5px solid #0c67ae;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#board img{
+    width: 120px;
+    height: 120px;
+    border: 1px solid #0c67ae;
+}

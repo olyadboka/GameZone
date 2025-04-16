@@ -1,0 +1,70 @@
+body {
+    text-align: center;
+    background: #f8f8f8;
+}
+
+hr {
+    width: 500px;
+}
+
+#board {
+    width: 398.5px;
+    height: 400px;
+    background-color: rgb(160, 168, 178);
+    border: 5px solid rgb(97, 112, 130);
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    -webkit-box-shadow: 12px 10px 5px 0px rgba(194,194,194,1);
+    -moz-box-shadow: 12px 10px 5px 0px rgb(0, 0, 0);
+    box-shadow: 12px 10px 5px 0px rgb(170, 167, 167);
+}
+
+.tile {
+    width: 90px;
+    height: 90px;
+    border: 5px solid rgb(97, 112, 130);
+    font-size: 35px;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.x2 { background-color: rgb(60, 255, 255); color: rgb(88, 90, 97); }
+.x4 { background-color: rgb(25, 204, 254); color: rgb(45, 45, 45); }
+.x8 { background-color: rgba(3, 139, 237, 0.955); color: rgb(0, 0, 0); }
+.x16 { background-color: rgba(79, 16, 253, 0.955); color: rgb(135, 239, 255); }
+.x32 { background-color: rgba(1, 7, 181, 0.955); color: rgb(195, 241, 253); }
+.x64 { background-color: rgba(124, 3, 230, 0.955); color: rgb(255, 255, 255); }
+.x128 { background-color: rgb(215, 106, 255); color: rgb(237, 227, 227); }
+.x256 { background-color: rgba(179, 0, 211, 0.841); color: rgb(255, 255, 255); }
+.x512 { background-color: rgb(251, 54, 222); color: rgb(93, 93, 93); }
+.x1024 { background-color: rgb(254, 146, 206); color: rgb(63, 68, 73); }
+.x2048 { background-color: rgb(255, 39, 158); color: rgb(41, 40, 40); }
+.x4096 { background-color: rgb(186, 18, 135); color: rgb(233, 222, 222); }
+.x8192 { background-color: rgb(128, 0, 89); color: rgb(255, 255, 255); }
+
+.hidden {
+    display: none;
+}
+
+#game-over {
+    font-size: 24px;
+    margin: 20px 0;
+    color: #931410; /* Optional: red color for the game over text */
+}
+
+#restart-button {
+    padding: 10px 20px;
+    font-size: 18px;
+    background-color: #5bc0de; /* Optional: blue color for the button */
+    border: none;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+}
+
+#restart-button:hover {
+    background-color: #000f58; /* Optional: darker blue on hover */
+}

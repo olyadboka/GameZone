@@ -1,0 +1,183 @@
+/* styles.css */
+body {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f9fa;
+}
+
+/* Header */
+header {
+    background: linear-gradient(135deg, #1d3bbd 0%, #000f2a 100%);
+    color: #ffffff;
+    padding: 15px 20px;
+    text-align: center;
+    font-size: 24px;
+    font-style: oblique;
+    font-weight: 700;
+    transition: padding 0.3s ease, font-size 0.3s ease;
+}
+
+header h2 {
+    margin: 20px 0;
+}
+
+/* Main Content */
+main {
+    padding: 20px 40px;
+}
+
+/* Grid Layout */
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* Default: 4 columns */
+    gap: 25px;
+}
+
+/* Grid Items */
+.grid-item {
+    background: linear-gradient(135deg, #ffffff 0%, #7ca2db 100%);
+    padding: 15px;
+    border-radius: 12px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Hover Effects */
+.grid-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.25);
+    background: linear-gradient(135deg, #ffffff 0%, #041376 100%);
+}
+
+.grid-item img {
+    width: 100%;
+    max-width: 200px;
+    height: auto;
+    border-radius: 10px;
+    transition: transform 0.4s ease-in-out, opacity 0.3s ease-in-out;
+}
+
+/* Image Zoom-In Animation */
+.grid-item img:hover {
+    transform: scale(1.1); /* Zooms in by 20% */
+    opacity: 0.9;
+}
+
+/* Heading inside Grid Item */
+.grid-item h4 {
+    margin: 15px 0 10px;
+    font-size: 18px;
+    font-weight: bold;
+    color: #000f2a;
+    transition: font-size 0.3s ease;
+}
+
+/* Description Text */
+.grid-item p {
+    font-size: 14px;
+    color: #333;
+    margin-bottom: 15px;
+    transition: font-size 0.3s ease;
+}
+
+/* Button */
+.grid-item button {
+    background: linear-gradient(135deg, #1d3bbd 0%, #000f2a 100%);
+    border: none;
+    border-radius: 6px;
+    color: #fff;
+    cursor: pointer;
+    font-size: 16px;
+    padding: 12px 22px;
+    font-weight: bold;
+    transition: background 0.3s ease, transform 0.2s ease;
+}
+
+/* Button Hover */
+.grid-item button:hover {
+    background: #ffffff;
+    color: #000154;
+    transform: scale(1.05);
+    border: 2px solid #000154;
+}
+
+/* 🔥 RESPONSIVE DESIGN */
+
+/* Laptops (3 columns) */
+@media (max-width: 1200px) {
+    .grid-container {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    header {
+        font-size: 22px;
+        padding: 12px 18px;
+    }
+
+    .grid-item h4 {
+        font-size: 17px;
+    }
+
+    .grid-item p {
+        font-size: 13px;
+    }
+}
+
+/* Tablets (2 columns) */
+@media (max-width: 900px) {
+    .grid-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    main {
+        padding: 15px;
+    }
+
+    header {
+        font-size: 20px;
+        padding: 10px 15px;
+    }
+
+    .grid-item h4 {
+        font-size: 16px;
+    }
+
+    .grid-item p {
+        font-size: 12px;
+    }
+
+    .grid-item img {
+        max-width: 180px;
+    }
+}
+
+/* Mobile (1 column) */
+@media (max-width: 600px) {
+    .grid-container {
+        grid-template-columns: repeat(1, 1fr);
+    }
+    
+    main {
+        padding: 10px;
+    }
+
+    header {
+        font-size: 18px;
+        padding: 8px 12px;
+    }
+
+    .grid-item h4 {
+        font-size: 15px;
+    }
+
+    .grid-item p {
+        font-size: 12px;
+    }
+
+    .grid-item img {
+        max-width: 160px;
+    }
+}
