@@ -1,0 +1,76 @@
+/* General Body Styling */
+body {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-align: center;
+    color: black;
+    background-color: rgb(255, 255, 255);
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Headings */
+h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+h4 {
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+}
+
+/* Game Board */
+#board {
+    background-color: rgb(160, 168, 178);
+    border: 5px solid rgb(97, 112, 130);
+    box-shadow: 12px 10px 5px 0px rgb(170, 167, 167);
+    width: 90vw;
+    max-width: 500px;
+    height: 90vw;
+    max-height: 500px;
+}
+
+/* Responsive Adjustments */
+
+/* Laptops */
+@media (max-width: 1200px) {
+    h1 {
+        font-size: 2rem;
+    }
+    h4 {
+        font-size: 1.3rem;
+    }
+}
+
+/* Tablets */
+@media (max-width: 900px) {
+    h1 {
+        font-size: 1.8rem;
+    }
+    h4 {
+        font-size: 1.2rem;
+    }
+    #board {
+        max-width: 400px;
+        max-height: 400px;
+    }
+}
+
+/* Mobile */
+@media (max-width: 600px) {
+    h1 {
+        font-size: 1.5rem;
+    }
+    h4 {
+        font-size: 1rem;
+    }
+    #board {
+        max-width: 320px;
+        max-height: 320px;
+    }
+}
